@@ -17,6 +17,7 @@ $(NAME):  $(OBJ)
 	gcc -c -Wextra -Wall -o $@ $<
 
 clean:
+	make -C libft/ clean
 	rm -f $(OBJ)
 	
 fclean : clean
